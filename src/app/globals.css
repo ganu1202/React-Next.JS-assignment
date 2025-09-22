@@ -1,26 +1,83 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.input{
+  height: 35px;
+  width: 300px;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.btn{
+  height: 35px;
+  width: 300px;
+  display: block;
+  margin-bottom: 20px;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.navbar {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.nav-link {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #555;
+}
+/* Apply full height layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Root container */
+.page-container {
+  max-width: 900px;
+  margin:0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Push footer to bottom */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+  text-align: left;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
